@@ -14,7 +14,7 @@ function HomePage() {
     if (category) {
       dispatch(getHomePage(category));
     }
-  }, [category]);
+  }, [category, dispatch]);
 
   return (
     <div className="container">

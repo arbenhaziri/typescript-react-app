@@ -1,3 +1,7 @@
 import * as appBar from "./appBar";
 
-export default { appBar };
+const actions = {
+  appBar,
+};
+
+export default actions;

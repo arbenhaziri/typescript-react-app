@@ -1,3 +1,4 @@
 import appBar from "./appBar";
 
-export default { appBar };
+const reducers = { appBar };
+export default reducers;

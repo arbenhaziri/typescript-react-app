@@ -13,7 +13,7 @@ function Intentory() {
     if (category) {
       dispatch(getInventory(category));
     }
-  }, [category]);
+  }, [category, dispatch]);
 
   return (
     <div className="container">
