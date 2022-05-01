@@ -1,0 +1,26 @@
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid none;
+    border-radius: 10px;
+    background-color: #bed6ea29;
+    width: 180px;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    h4 {
+        color: #434141e6;
+        margin-top: 0px;
+     }
+}
