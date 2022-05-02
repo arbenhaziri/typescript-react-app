@@ -1,4 +1,11 @@
-function EmptyState({ state, children }: any) {
+import { Inventory, Homepage } from "../../interfaces";
+
+type Props = {
+  state: Inventory | Homepage;
+  children: JSX.Element;
+};
+
+const EmptyState = ({ state, children }: Props) => {
   if (state) return <>{children}</>;
   return (
     <div
@@ -11,6 +18,6 @@ function EmptyState({ state, children }: any) {
       <p style={{ fontSize: "22px" }}>Please select a category...</p>
     </div>
   );
-}
+};
 
 export default EmptyState;

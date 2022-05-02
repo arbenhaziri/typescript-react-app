@@ -1,5 +1,6 @@
 import { API_URL } from "../properties";
 import { handleErrors } from "./helpers";
+import { Inventory, Homepage, Metadata } from "../interfaces";
 
 export const ACTIVE_NAV_TAB = "ACTIVE_NAV_TAB";
 export const setNavTab = (text: string) => ({
@@ -19,7 +20,7 @@ export const getMetaDataBegin = () => ({
 });
 
 export const GET_METADATE_SUCCESS = "GET_METADATE_SUCCESS";
-export const getMetaDataSuccess = (data: any) => ({
+export const getMetaDataSuccess = (data: Metadata) => ({
   type: GET_METADATE_SUCCESS,
   payload: data,
 });
@@ -51,7 +52,7 @@ export const getHomePageBegin = () => ({
 });
 
 export const GET_HOMEPAGE_SUCCESS = "GET_HOMEPAGE_SUCCESS";
-export const getHomePageSuccess = (data: any) => ({
+export const getHomePageSuccess = (data: Homepage) => ({
   type: GET_HOMEPAGE_SUCCESS,
   payload: data,
 });
@@ -84,7 +85,7 @@ export const getInventoryBegin = () => ({
 });
 
 export const GET_INVENTORY_SUCCESS = "GET_INVENTORY_SUCCESS";
-export const getInventorySuccess = (data: any) => ({
+export const getInventorySuccess = (data: Inventory) => ({
   type: GET_INVENTORY_SUCCESS,
   payload: data,
 });

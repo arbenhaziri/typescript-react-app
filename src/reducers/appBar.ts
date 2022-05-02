@@ -6,7 +6,7 @@ type Action = {
   msg: string;
 };
 
-type InitialState = {
+interface InitialState {
   navBar: string;
   metaData: null | object;
   homePageData: null | object;
